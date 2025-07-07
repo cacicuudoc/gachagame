@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gacha Game Kustom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gacha Karakter Kustom</h1>
+
+        <div class="gacha-container">
+            <div class="gacha-machine">
+                <div class="gacha-handle"></div>
+                <div class="gacha-window">
+                    <div id="gachaBall" class="gacha-ball"></div>
+                </div>
+                <button id="gachaButton">Putar Gacha!</button>
+            </div>
+            <div class="character-display">
+                <img id="gachaCharacter" src="images/placeholder.png" alt="Karakter Gacha">
+                <h2 id="characterName">Tekan Gacha!</h2>
+            </div>
+        </div>
+
+        <div class="customization-section">
+            <h2>Kustomisasi Karakter Anda</h2>
+            <div class="custom-options">
+                <div class="option-group">
+                    <label for="bodyPart">Bagian Tubuh:</label>
+                    <select id="bodyPart">
+                        <option value="base">Dasar</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label for="colorPicker">Warna:</label>
+                    <input type="color" id="colorPicker" value="#ffffff">
+                </div>
+            </div>
+            <button id="applyCustomization">Terapkan Kustomisasi</button>
+        </div>
+
+        <div class="inventory">
+            <h2>Koleksi Anda</h2>
+            <div id="characterInventory" class="inventory-grid">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

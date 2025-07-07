@@ -1,0 +1,66 @@
+/* ... CSS sebelumnya ... */
+
+.gacha-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.gacha-machine {
+    background-color: #4c566a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.gacha-handle {
+    width: 30px;
+    height: 70px;
+    background-color: #d08770;
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+.gacha-handle:hover {
+    background-color: #e0a38f;
+}
+
+.gacha-window {
+    width: 100px;
+    height: 100px;
+    background-color: #89b0f3;
+    border: 5px solid #5e81ac;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gacha-ball {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+    /* Posisi awal di dalam window */
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out, background-color 0.3s ease;
+}
+
+#gachaButton {
+    /* ... gaya tombol sebelumnya ... */
+    margin-top: 10px;
+}
+
+.character-display {
+    /* ... gaya character-display sebelumnya ... */
+    margin-top: 20px; /* Sesuaikan jarak dari mesin gacha */
+}
